@@ -1,0 +1,309 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Playlist 4 Strive</title>
+
+    <style>
+
+        body {  background: linear-gradient(to bottom, #c31432, #240b36);>
+     
+
+        }
+
+     
+
+        .badge{
+            position:absolute; 
+        }
+
+        .jumbotron {
+            color:white;
+            background-image: url("https://images.squarespace-cdn.com/content/v1/59eb8ebc1f318dc4da490f5d/1533170224865-T37P9ODBEKP626QMXJXW/ke17ZwdGBToddI8pDm48kCQk2zunoKiIFW35B84FIyV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXiDXE9gBE6MpsvHTR9qjuuOzYwSNUnR7AC_J8RtCgbszwMy-Jd4qnWKZiGmV5bqqQ/guitarhero.jpg");
+        }
+
+        .checkLive{
+            position: absolute
+            right:50px
+            ;
+        }
+
+        .btnc {
+            position:relative;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+          
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+          </nav>
+
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </div>
+
+          <div class="container">
+
+            <div class="card-group fav my-5">
+                <div class="card mx-2">
+                    <span class="badge badge-pill badge-primary">Glam Rock</span>
+                  <img src="https://cdn.shopify.com/s/files/1/0902/5612/products/bon_jovi_slippery_when_wet_vinyl_front_cover.JPG?v=1489293656" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th class="col"></th>
+                            <th class="col">Song</th>
+                            <th class="col">Last</th>
+                           
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="row">1</th>
+                            <td>Let It Rock</td>
+                            <td>5:26</td>
+                            <td><button type="button" class="btn btn-danger">Remove</button></td>
+                            
+                          </tr>
+                          <tr>
+                            <th class="row">2</th>
+                            <td>You Give Love a Bad Name</td>
+                            <td>5:26</td>
+                            <td><button type="button" class="btn btn-danger">Remove</button></td>
+                            
+                          </tr>
+                          <tr>
+                            <th class="row">3</th>
+                            <td>Livin' on a Prayer</td>
+                            <td>3:43</td>
+                            <td><button type="button" class="btn btn-danger">Remove</button></td>
+                            
+                          </tr>
+                          <tr>
+                            <th class="row">4</th>
+                            <td>Social Disease</td>
+                            <td>4:18</td>
+                            <td><button type="button" class="btn btn-danger">Remove</button></td>
+                           
+                          </tr>
+                          <tr>
+                            <th class="row">5</th>
+                            <td>Wanted Dead or Alive</td>
+                            <td>3:56</td>
+                            <td><button type="button" class="btn btn-danger">Remove</button></td>
+                            
+                          </tr>
+                          <tr>
+                            <th class="row-6">6</th>
+                            <td>Raise Your Hands</td>
+                            <td>4:31</td>
+                            <td><button type="button" class="btn btn-danger" onclick="delRow()">Remove</button></td>
+                            
+                          </tr>
+                        </tbody>
+                      </table>
+                    
+
+                      
+                        
+        
+                  </div>
+                  <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Launch demo modal
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="basic-addon1">Song name</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Insert name of the song" aria-label="name" aria-describedby="basic-addon1" required>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="exampleFormControlSelect1" required>Song number</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                
+
+                            </div>
+
+                            <div class="checkbox">
+                                <label><input type="checkbox" class="checkLive">Live track</label>
+                              </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary addValue" onclick="validation()">Add</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2">
+                    <span class="badge badge-pill badge-danger">Hard Rock</span>
+                  <img src="https://upload.wikimedia.org/wikipedia/en/e/ef/Led_Zeppelin_-_Led_Zeppelin_%281969%29_front_cover.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card mx-2">
+                    <span class="badge badge-pill badge-warning">Skate Punk</span>
+                  <img src="https://img.discogs.com/LJ29iyHxN-CY2o2nSP4m7o6bAts=/fit-in/591x592/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-12821075-1543921152-5380.jpeg.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-group worst">
+                <div class="card mx-2">
+                  <img src="https://images-na.ssl-images-amazon.com/images/I/71pLD9e9jvL._AC_SL1500_.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card mx-2">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/e/e6/NOFX_-_I_Heard_They_Suck_Live%21_cover.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card mx-2">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/e/e6/Stadiumarcadium.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            
+
+
+          </div>
+        </div>
+        <footer class="container py-5">
+            <div class="row">
+              <div class="col-12 col-md">
+                <small class="d-block mb-3 text-muted">Strive 4Music</small>
+              </div>
+              <div class="col-6 col-md">
+                <h5>Enjoy music</h5>
+                <ul class="list-unstyled text-small">
+                  <li><a class="text-muted" href="#">About</a></li>
+                  <li><a class="text-muted" href="#">Random Song</a></li>
+                  <li><a class="text-muted" href="#">Random band</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md">
+                <h5>Map</h5>
+                <ul class="list-unstyled text-small">
+                  <li><a class="text-muted" href="#">Home</a></li>
+                  <li><a class="text-muted" href="#">Library</a></li>
+                  <li><a class="text-muted" href="#">Data</a></li>
+                </ul>
+
+                
+              </div>
+              <div class="mb-6">
+                <div class="col-md-4 offset-md-1 col-sm-12">
+                   
+                        <form class="form-inline">
+                            <input type="hidden" value="fT7IhYP2GJAZyo6Bf5hwjKqfbDGjBYvqwtiVtonmwlY+BXi43CaJKj08+dltUN0F8esR/WFmYKRzXkHLMFUnra87jTWARh08wsTCDbKA/l7iflAWpIScBdZ9IfKbOTU1" data-form-email="true">
+                            <div class="form-group">
+                                <input type="email" class="form-control input-sm input-inverse my-2" name="email" required="" data-form-field="Email" placeholder="Email" id="email-footer4-3i">
+                            </div>
+                            <div class="input-group-btn btnc">
+                                <td><button type="button" class="btn btn-primary">Contact</button></td>
+                            </div>
+                        </form>
+                    </div>
+                  
+                
+                </div>
+                </div>
+                
+              
+                         
+            </div>
+          </footer>
+
+          
+
+    
+
+
+      </div>
+
+      <script>
+          function validation(){
+                let songName =document.querySelector(".modal-body input[type=text]").value
+                if (songName){ // se ha un valore!
+                    alert(songName)
+                }
+                else {
+                    alert("devi inserire un valore")
+                }
+          }
+
+
+           
+
+
+
+
+      </script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
